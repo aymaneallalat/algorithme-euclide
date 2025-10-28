@@ -1,0 +1,48 @@
+DEFINITION DE PGCD :
+Le PGCD de deux nombres a et b est le plus grand entier qui divise à la fois a et 𝑏 sans laisser de reste.
+
+le principe:
+Si a et b sont deux entiers tels que a > b le PGCD (a,b) = PGCD (b,a mod b), et on repete jusqu'a ce que le rest soit nul.
+
+EXEMPLE : 
+1) a = 48 , b = 18 
+    48 mod 18 = 12
+    18 mod 12 = 6
+    12 mod 6  = 0
+  DONC le PGCD de a et b est : 6
+
+2) a = 84 , b = 30
+    84 % 30 = 24
+    30 % 24 = 6
+    24 % 6  = 0
+  DONC le PGCD de a et b est : 6
+
+3) a = 81 , b = 63
+    81 mod 63 = 18
+    63 mod 18 = 9
+    18 mod 9 = 0
+  DONC le PGCD de a et b est : 9
+
+Algorithme : 
+
+Algorithme Euclide
+Variables :
+   a, b, reste : entier
+
+Début
+   Écrire "Entrez le premier entier : "
+   Lire a
+   Écrire "Entrez le deuxième entier : "
+   Lire b
+
+   Tant que b ≠ 0 faire
+       reste ← a mod b
+       Écrire ("a =  b =  reste =", a , b , reste )
+       a ← b
+       b ← reste
+   Fin Tant que
+
+   Écrire ("Le PGCD est :", a)
+Fin
+
+
