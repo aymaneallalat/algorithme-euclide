@@ -5,10 +5,10 @@ int main() {
 
     printf("Entrez le premier entier : ");
     scanf("%d", &a);
-    printf("Entrez le deuxième entier : ");
+    printf("Entrez le deuxieme entier : ");
     scanf("%d", &b);
 
-    printf("\n--- Étapes du calcul ---\n");
+    printf("\n--- Etapes du calcul ---\n");
 
     while (b != 0) {
         reste = a % b;
@@ -21,3 +21,4 @@ int main() {
 
     return 0;
 }
+
